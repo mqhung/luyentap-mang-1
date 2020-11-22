@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Link 2 Array</title>
+</head>
+<body>
+<h3>Array 1 :1,2,3,4,5,6,7,8,9,10 </h3>
+<h3>Array 2 :11,12,13,14,15,16,17,18,19,20 </h3>
+<input type="button" onclick="linkArray();" value="Link Array">
+<p>New array after link is: <span id="result"></span></p>
+<script>
+    let arr1 = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+    let arr2 = new Array(11, 12, 13, 14, 15, 16, 17, 18, 19, 20);
+    let arr = new Array();
+    function linkArray(){
+        arr = arr1.concat(arr2);
+        document.getElementById('result').innerHTML = arr;
+    }
+</script>
+</body>
+</html>

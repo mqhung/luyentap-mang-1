@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check number in Array</title>
+</head>
+<body>
+<h3>Cho mảng gồm các số :1,8,10,15,20,9,31,93,28,94 </h3>
+<input type="text" id="value">
+<input type="button" onclick="findValue();" value="FindValue">
+<p>Check number in Array: <span id="result"></span></p>
+<script>
+    let arr = new Array(1, 8, 10, 15, 20, 9, 31, 93, 28, 94);
+    let number = +document.getElementById('value').value;
+    let arr1 = new Array();
+    function findValue(){
+        for (let i=0; i<arr.length; i++){
+            if (arr[i] == number){
+                arr1.push(arr[i]);
+            }
+        }
+        if (arr1.length == 0){
+            document.getElementById('result').innerHTML = "Number is not in Array";
+        } else {
+            document.getElementById('result').innerHTML = "Number is in Array";
+        }
+    }
+</script>
+</body>
+</html>

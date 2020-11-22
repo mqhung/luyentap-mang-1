@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check number in array and Delete</title>
+</head>
+<body>
+<h3>Cho mảng gồm các số :1,8,10,15,20,9,31,93,28,94 </h3>
+<input type="text" id="value">
+<input type="button" onclick="findAndDelete();" value="Check">
+<p>Show new Array: <span id="result"></span></p>
+<script>
+    let arr = new Array(1, 8, 10, 15, 20, 9, 31, 93, 28, 94);
+    let number = +document.getElementById('value').value;
+    function findAndDelete(){
+        for (let i=0; i<arr.length; i++){
+            if (arr[i] == number){
+                arr.splice(i,1);
+            }
+        }
+        document.getElementById('result').innerHTML = arr;
+    }
+</script>
+</body>
+</html>

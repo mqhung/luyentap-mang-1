@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reverse Array</title>
+</head>
+<body>
+<h3>Cho mảng gồm các số :1,8,10,15,20,9,31,93,28,94 </h3>
+<input type="button" onclick="reverseArray();" value="Reverse">
+<p>Show reverse Array: <span id="result"></span></p>
+<script>
+    let arr = new Array(1, 8, 10, 15, 20, 9, 31, 93, 28, 94);
+    function reverseArray(){
+        arr.reverse();
+        document.getElementById('result').innerHTML = arr;
+    }
+</script>
+</body>
+</html>

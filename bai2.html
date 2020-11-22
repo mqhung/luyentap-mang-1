@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Cho mảng gồm các số :1,8,10,15,20,9,31,93,28,94 </p>
+<p id="display"></p>
+<script>
+    function findMax() {
+        let arr = new Array(1, 8, 10, 15, 20, 9, 31, 93, 28, 94);
+        let max = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            if (max < arr[i]) {
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+    document.getElementById('display').innerHTML = "Giá trị lớn nhất là " +  findMax();;
+</script>
+</body>
+</html>

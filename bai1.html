@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Cho mảng gồm các số :1,8,10,15,20,9,31,93,28,94 </p>
+<p id="count"></p>
+<p id="display"></p>
+<script>
+    let arr = new Array(1,8,10,15,20,9,31,93,28,94);
+    let count = 0;
+    let arr1 = new Array();
+    for (let i = 0; i<arr.length; i++) {
+        if (arr[i]>=10){
+            count++;
+            arr1.push(arr[i]);
+        }
+    }
+    document.getElementById('count').innerHTML = "Có "+count+ " số lớn hơn 10";
+    document.getElementById('display').innerHTML = "Các số lớn hơn hoặc bằng 10 là "+arr1;
+
+</script>
+</body>
+</html>
